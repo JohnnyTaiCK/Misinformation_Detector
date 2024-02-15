@@ -3,5 +3,5 @@ from django.urls import path
 from .views import UserFeedbackViewSet
 
 urlpatterns = [
-    path('', UserFeedbackViewSet.as_view({'get': 'list'})),
+    path('', UserFeedbackViewSet.as_view({'post': 'create'})),
 ]
