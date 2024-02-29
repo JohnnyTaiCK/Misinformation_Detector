@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.urls import path
-from .views import UserFeedbackViewSet
+from .views import DetectionViewSet
 
 urlpatterns = [
-    path('', UserFeedbackViewSet.as_view({'post': 'create'})),
+    path('', DetectionViewSet.as_view({'post': 'create'})),
 ]
